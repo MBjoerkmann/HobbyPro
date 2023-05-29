@@ -1,0 +1,24 @@
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>hello, Vue</title>
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+    
+</head>
+<body>
+    <h1>hi vue</h1>
+
+    <div id="app">
+        <h2>I am the template</h2>
+        <p>{{ title }} - {{author}} - {{age}} </p>
+
+        <button v-on:click="age++">Increase age</button>
+        <button v-on:click="age--">decrease age</button>
+        <div @click="changeTitle">Change title</div>
+    </div>
+    <script src="appTest.js"></script>
+
+</body>
+</html>
